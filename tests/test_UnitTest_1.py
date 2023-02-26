@@ -1,4 +1,4 @@
-# Define the test case - the sub-function from Floyd_Recursive.py
+# Define the test case using the sub-function from Floyd_Recursive.py
 import sys
 import unittest
 
@@ -19,7 +19,9 @@ def shortest_path(i, j, k):
                    shortest_path(i, k - 1, k - 1) + shortest_path(k - 1, j, k - 1))
 
 
+# Define a class called TestSum that inherits from the TestCase class
 class TestSubFunction(unittest.TestCase):
+    # Convert the test functions into methods by adding self as the first argument
     def test_k(self):
         for i in range(len(graph)):
             for j in range(len(graph)):
@@ -32,5 +34,6 @@ class TestSubFunction(unittest.TestCase):
                 self.assertIsNot(shortest_path(i, j, 3), check, "Should not be 1 or 3 or 4")
 
 
+# Define the command-line entry point to call unittest.main()
 if __name__ == '__main__':
     unittest.main()

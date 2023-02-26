@@ -26,8 +26,7 @@ def floyd_warshall_recursion(graph):
         as a 2-dimensional list.
 
     Returns:
-        A matrix, where the element at index (i, j) is the length of the shortest
-        path between nodes i and j.
+        A matrix, where the element at index (i, j) is the shortest distance between nodes i and j.
     """
     # Define a sub-function that calculates the shortest path between all nodes
     def shortest_path(i, j, k):
@@ -55,7 +54,7 @@ def floyd_warshall_recursion(graph):
     # Return the list of the shortest paths
     return distance
 
+
 if __name__ == '__main__':
     distance = floyd_warshall_recursion(graph)
     print(distance)
-

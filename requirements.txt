@@ -1,0 +1,17 @@
+In the provided code, the external libraries are:
+
+    itertools: This is a built-in module in Python that provides functions for working with iterators and iterable objects.
+
+    unittest: This is a built-in module in Python that provides a framework for writing and running unit tests.
+
+    random: This is a built-in module in Python that provides functions for generating random numbers
+    and other random values.
+
+    sys: This is a built-in module in Python that provides access to some system-specific parameters
+    and functions.
+
+    CSCK541_Practical_Assessment.Floyd_Recursive: This is a user-defined module, containing the implementation
+    of the Floyd-Warshall algorithm using recursion.
+
+    CSCK541_Practical_Assessment.Random_Graph: This is another user-defined module, containing a function
+    for generating a random graph.
