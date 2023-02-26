@@ -5,14 +5,14 @@ import sys
 # Define a constant representing the maximum distance between nodes in the graph
 NO_PATH = sys.maxsize
 # Define the given graph as a 2-dimensional list
-graph1 = [
+graph = [
     [0, 7, NO_PATH, 8],
     [NO_PATH, 0, 5, NO_PATH],
     [NO_PATH, NO_PATH, 0, 2],
     [NO_PATH, NO_PATH, NO_PATH, 0]
 ]
 # Define a variable representing the number of nodes in the graph
-MAX_LENGTH = len(graph1[0])
+MAX_LENGTH = len(graph[0])
 
 
 # Define a recursive function that applies the Floyd Warshall algorithm to a graph
@@ -55,6 +55,6 @@ def floyd_warshall_recursion(graph):
     # Return the list of the shortest paths
     return distance
 
-
-distance = floyd_warshall_recursion(graph1)
-print(distance)
+if __name__ == '__main__':
+    distance = floyd_warshall_recursion(graph)
+    print(distance)
