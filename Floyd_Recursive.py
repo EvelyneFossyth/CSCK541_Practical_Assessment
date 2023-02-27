@@ -22,7 +22,7 @@ def floyd_warshall_recursion(graph):
     Floyd-Warshall algorithm, implemented recursively.
 
     Args:
-        graph: A square matrix representing a weighted directed graph. In this case the graph is given
+        graph - a square matrix representing a weighted directed graph. In this case the graph is given
         as a 2-dimensional list.
 
     Returns:
@@ -36,11 +36,13 @@ def floyd_warshall_recursion(graph):
         recursive call until it reaches 0, at which point the function returns the distance between
         the i-th and j-th nodes from the original graph.
 
-        Parameter:
-        i - start node as integer
-        j - end node as integer
-        k - intermediate node as integer
-        return - an integer, as long as the elements of the graph parameter are integers; otherwise can be a float
+        Args:
+            i - start node as integer
+            j - end node as integer
+            k - intermediate node as integer
+
+        Returns:
+             An integer, as long as the elements of the graph parameter are integers; otherwise can be a float
         """
         # Base case
         if k == 0:

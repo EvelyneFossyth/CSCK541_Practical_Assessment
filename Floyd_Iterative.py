@@ -1,7 +1,6 @@
 # A simple iterative implementation of the Floyd-Warshall algorithm
-
-import sys
 import itertools
+import sys
 
 NO_PATH = sys.maxsize
 
